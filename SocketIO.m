@@ -25,7 +25,6 @@
 #import "RegexKitLite.h"
 #import "SBJson.h"
 
-#define USE_SOCKET_ROCKET 1 
 #define DEBUG_LOGS 1
 #define HANDSHAKE_URL @"http://%@:%d/socket.io/1/?t=%d%@"
 #define SOCKET_URL @"ws://%@:%d/socket.io/1/websocket/%@"
@@ -34,14 +33,8 @@
 # pragma mark -
 # pragma mark SocketIO's private interface
     
-#ifdef USE_SOCKET_ROCKET
 @interface SocketIO (private_socketRocket) <SRWebSocketDelegate>
 @end
-#endif
-#ifndef USE_SOCKET_ROCKET
-@interface SocketIO (private_websocket) <WebSocketDelegate>
-@end
-#endif
 
 
 @interface SocketIO (FP_Private)
@@ -118,16 +111,9 @@
         NSURL *url = [NSURL URLWithString:s];
         [query release];
         
-        if (USE_SOCKET_ROCKET){
-            ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
-            [request setDelegate:self];
-            [request startAsynchronous]; 
-        } else {
-            debug(@"WEB SOCKET: request");
-            ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
-            [request setDelegate:self];
-            [request startAsynchronous];   
-        }
+        ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+        [request setDelegate:self];
+        [request startAsynchronous]; 
     }
 }
 
@@ -202,20 +188,11 @@
 - (void) openSocket
 {
     NSString *url = [NSString stringWithFormat:SOCKET_URL, _host, _port, _sid];
-    if (USE_SOCKET_ROCKET){
-        debug(@"SOCKET ROCKET from openSocket: open");
-        _socketRocket = [[SRWebSocket alloc] initWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
-        _socketRocket.delegate = self;
-        debug(@"SOCKET ROCKET: init and open...");
-        [_socketRocket open];
-    } else {
-        debug(@"WEB SOCKET: open");
-        [_webSocket release];
-        _webSocket = nil;
-        _webSocket = [[WebSocket alloc] initWithURLString:url delegate:self];
-        debug([NSString stringWithFormat:@"Opening %@", url]);
-        [_webSocket open];
-    }
+    debug(@"SOCKET ROCKET from openSocket: open");
+    _websocket = [[SRWebSocket alloc] initWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
+    _websocket.delegate = self;
+    debug(@"SOCKET ROCKET: init and open...");
+    [_websocket open];
 }
 
 - (void) sendDisconnect
@@ -283,15 +260,9 @@
     } 
     else 
     {
-        debug([NSString stringWithFormat:@"send() >>> %@", req]);
-        
-        if (USE_SOCKET_ROCKET){
-            debug(@"SOCKET ROCKET: send");
-            [_socketRocket send:req];            
-        } else {
-            debug(@"WEB SOCKET: send");
-            [_webSocket send:req];            
-        }
+        debug([NSString stringWithFormat:@"send() >>> %@", req]);        
+        debug(@"SOCKET ROCKET: send");
+        [_websocket send:req];            
         
         if ([_delegate respondsToSelector:@selector(socketIO:didSendMessage:)])
         {
@@ -500,17 +471,10 @@
     }
     
     // Disconnect the websocket, just in case
-    if (USE_SOCKET_ROCKET){
-        if (_socketRocket != nil && (_socketRocket.readyState==1)/*1=SRReadyState.SR_OPEN*/ ) {
-            debug(@"SOCKET ROCKET: close");
-            [_socketRocket close];
-        }        
-    } else {
-        debug(@"WEB SOCKET: close");
-        if (_webSocket != nil && [_webSocket connected]) {
-            [_webSocket close];
-        }
-    }
+    if (_websocket != nil && (_websocket.readyState==1)/*1=SRReadyState.SR_OPEN*/ ) {
+        debug(@"SOCKET ROCKET: close");
+        [_websocket close];
+    }        
     
     if (wasConnected && [_delegate respondsToSelector:@selector(socketIODidDisconnect:)]) 
     {
@@ -605,7 +569,6 @@
 }
 
 
-#ifdef USE_SOCKET_ROCKET
 #pragma mark - SRWebSocketDelegate
 - (void)webSocket:(SRWebSocket *)webSocket didCloseWithCode:(NSInteger)code reason:(NSString *)reason wasClean:(BOOL)wasClean {
     debug(@"SOCKET ROCKET: Connection closed. Reason: %@. Was it clean? %@", reason, wasClean?@"YES":@"NO");
@@ -621,36 +584,6 @@
 - (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(NSString *)message {
     [self onData:message];
 }
-#endif
-
-
-#ifndef USE_SOCKET_ROCKET
-#pragma mark - WebSocketDelegate
-
-- (void) webSocketDidClose:(WebSocket*)webSocket 
-{
-    debug([NSString stringWithFormat:@"Connection closed."]]);
-    [self onDisconnect];
-}
-
-- (void) webSocketDidOpen:(WebSocket *)ws 
-{
-    debug([NSString stringWithFormat:@"Connection opened."]]);
-}
-
-- (void) webSocket:(WebSocket *)ws didFailWithError:(NSError *)error 
-{
-    debug(@"ERROR: Connection failed with error ... %@", [error localizedDescription]);
-    // Assuming this resulted in a disconnect
-    [self onDisconnect];
-}
-
-- (void) webSocket:(WebSocket *)ws didReceiveMessage:(NSString*)message 
-{
-    [self onData:message];
-}
-
-#endif
 
 
 # pragma mark -
@@ -669,8 +602,7 @@
     [_sid release];
     [_endpoint release];
     
-    [_webSocket release];
-    [_socketRocket release];
+    [_websocket release];
     
     [_timeout invalidate];
     [_timeout release];

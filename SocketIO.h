@@ -49,8 +49,7 @@ typedef void(^SocketIOCallback)(id argsData);
     
     id<SocketIODelegate> _delegate;
     
-    SRWebSocket *_socketRocket;
-    WebSocket *_webSocket;
+    SRWebSocket *_websocket;
     
     BOOL _isConnected;
     BOOL _isConnecting;
