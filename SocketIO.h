@@ -19,6 +19,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SRWebSocket.h"
 
 @class WebSocket;
 @class SocketIO;
@@ -48,6 +49,7 @@ typedef void(^SocketIOCallback)(id argsData);
     
     id<SocketIODelegate> _delegate;
     
+    SRWebSocket *_socketRocket;
     WebSocket *_webSocket;
     
     BOOL _isConnected;
