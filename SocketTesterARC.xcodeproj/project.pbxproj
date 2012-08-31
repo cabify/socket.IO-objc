@@ -7,37 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A444FA11589E28800B44ABB /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A444FA01589E28800B44ABB /* libicucore.dylib */; };
-		4A444FA31589E29500B44ABB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A444FA21589E29500B44ABB /* Security.framework */; };
-		4A44536C1589EE5900B44ABB /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4453541589EE5900B44ABB /* NSObject+SBJson.m */; };
-		4A44536D1589EE5900B44ABB /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4453571589EE5900B44ABB /* SBJsonParser.m */; };
-		4A44536E1589EE5900B44ABB /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4453591589EE5900B44ABB /* SBJsonStreamParser.m */; };
-		4A44536F1589EE5900B44ABB /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A44535B1589EE5900B44ABB /* SBJsonStreamParserAccumulator.m */; };
-		4A4453701589EE5900B44ABB /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A44535D1589EE5900B44ABB /* SBJsonStreamParserAdapter.m */; };
-		4A4453711589EE5900B44ABB /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A44535F1589EE5900B44ABB /* SBJsonStreamParserState.m */; };
-		4A4453721589EE5900B44ABB /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4453611589EE5900B44ABB /* SBJsonStreamWriter.m */; };
-		4A4453731589EE5900B44ABB /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4453631589EE5900B44ABB /* SBJsonStreamWriterAccumulator.m */; };
-		4A4453741589EE5900B44ABB /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4453651589EE5900B44ABB /* SBJsonStreamWriterState.m */; };
-		4A4453751589EE5900B44ABB /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4453671589EE5900B44ABB /* SBJsonTokeniser.m */; };
-		4A4453761589EE5900B44ABB /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4453691589EE5900B44ABB /* SBJsonUTF8Stream.m */; };
-		4A4453771589EE5900B44ABB /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A44536B1589EE5900B44ABB /* SBJsonWriter.m */; };
-		4A4453811589EE9100B44ABB /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A44537A1589EE9100B44ABB /* base64.c */; };
-		4A4453821589EE9100B44ABB /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A44537D1589EE9100B44ABB /* NSData+SRB64Additions.m */; };
-		4A4453831589EE9100B44ABB /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4453801589EE9100B44ABB /* SRWebSocket.m */; };
-		4ADCCBA215790D760022990C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ADCCBA115790D760022990C /* UIKit.framework */; };
-		4ADCCBA415790D760022990C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ADCCBA315790D760022990C /* Foundation.framework */; };
-		4ADCCBA615790D760022990C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ADCCBA515790D760022990C /* CoreGraphics.framework */; };
-		4ADCCBAC15790D760022990C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4ADCCBAA15790D760022990C /* InfoPlist.strings */; };
-		4ADCCBAE15790D760022990C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADCCBAD15790D760022990C /* main.m */; };
-		4ADCCBB215790D760022990C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADCCBB115790D760022990C /* AppDelegate.m */; };
-		4ADCCBB515790D760022990C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADCCBB415790D760022990C /* ViewController.m */; };
-		4ADCCBB815790D760022990C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ADCCBB615790D760022990C /* ViewController.xib */; };
-		4ADCCBEF15790FC70022990C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ADCCBEE15790FC70022990C /* CFNetwork.framework */; };
-		4ADCCBF115790FD30022990C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ADCCBF015790FD30022990C /* MobileCoreServices.framework */; };
-		4ADCCBF315790FDF0022990C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ADCCBF215790FDF0022990C /* SystemConfiguration.framework */; };
-		4ADCCD4D157915F00022990C /* SocketIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADCCBC715790DEC0022990C /* SocketIO.m */; };
-		C9E391A215E2A1B00004693A /* SocketIOJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E391A115E2A1B00004693A /* SocketIOJSONSerialization.m */; };
+		4DAE5F8315F0DC5D005EFF4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ADCCBA315790D760022990C /* Foundation.framework */; };
+		4DAE5F8815F0DC5D005EFF4D /* SocketIO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DAE5F8715F0DC5D005EFF4D /* SocketIO.h */; };
+		4DAE5F8E15F0DC76005EFF4D /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A44537D1589EE9100B44ABB /* NSData+SRB64Additions.m */; };
+		4DAE5F8F15F0DC76005EFF4D /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4453801589EE9100B44ABB /* SRWebSocket.m */; };
+		4DAE5F9015F0DC76005EFF4D /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4453541589EE5900B44ABB /* NSObject+SBJson.m */; };
+		4DAE5F9115F0DC76005EFF4D /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4453571589EE5900B44ABB /* SBJsonParser.m */; };
+		4DAE5F9215F0DC76005EFF4D /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4453591589EE5900B44ABB /* SBJsonStreamParser.m */; };
+		4DAE5F9315F0DC76005EFF4D /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A44535B1589EE5900B44ABB /* SBJsonStreamParserAccumulator.m */; };
+		4DAE5F9415F0DC76005EFF4D /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A44535D1589EE5900B44ABB /* SBJsonStreamParserAdapter.m */; };
+		4DAE5F9515F0DC76005EFF4D /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A44535F1589EE5900B44ABB /* SBJsonStreamParserState.m */; };
+		4DAE5F9615F0DC76005EFF4D /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4453611589EE5900B44ABB /* SBJsonStreamWriter.m */; };
+		4DAE5F9715F0DC76005EFF4D /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4453631589EE5900B44ABB /* SBJsonStreamWriterAccumulator.m */; };
+		4DAE5F9815F0DC76005EFF4D /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4453651589EE5900B44ABB /* SBJsonStreamWriterState.m */; };
+		4DAE5F9915F0DC76005EFF4D /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4453671589EE5900B44ABB /* SBJsonTokeniser.m */; };
+		4DAE5F9A15F0DC76005EFF4D /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4453691589EE5900B44ABB /* SBJsonUTF8Stream.m */; };
+		4DAE5F9B15F0DC76005EFF4D /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A44536B1589EE5900B44ABB /* SBJsonWriter.m */; };
+		4DAE5F9D15F0DC76005EFF4D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADCCBB415790D760022990C /* ViewController.m */; };
+		4DAE5F9E15F0DC76005EFF4D /* SocketIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADCCBC715790DEC0022990C /* SocketIO.m */; };
+		4DAE5F9F15F0DC76005EFF4D /* SocketIOJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E391A115E2A1B00004693A /* SocketIOJSONSerialization.m */; };
+		4DAE5FA115F0DC79005EFF4D /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A44537A1589EE9100B44ABB /* base64.c */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4DAE5F8015F0DC5D005EFF4D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				4DAE5F8815F0DC5D005EFF4D /* SocketIO.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4A444FA01589E28800B44ABB /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
@@ -74,7 +77,6 @@
 		4A44537E1589EE9100B44ABB /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SocketRocket-Prefix.pch"; path = "submodules/socket-rocket/SocketRocket/SocketRocket-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		4A44537F1589EE9100B44ABB /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRWebSocket.h; path = "submodules/socket-rocket/SocketRocket/SRWebSocket.h"; sourceTree = SOURCE_ROOT; };
 		4A4453801589EE9100B44ABB /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SRWebSocket.m; path = "submodules/socket-rocket/SocketRocket/SRWebSocket.m"; sourceTree = SOURCE_ROOT; };
-		4ADCCB9D15790D760022990C /* SocketTesterARC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocketTesterARC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ADCCBA115790D760022990C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4ADCCBA315790D760022990C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4ADCCBA515790D760022990C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -92,23 +94,21 @@
 		4ADCCBEE15790FC70022990C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		4ADCCBF015790FD30022990C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		4ADCCBF215790FDF0022990C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4DAE5F4315F0DBC9005EFF4D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		4DAE5F8215F0DC5D005EFF4D /* libSocketIO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSocketIO.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DAE5F8615F0DC5D005EFF4D /* SocketIO-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SocketIO-Prefix.pch"; sourceTree = "<group>"; };
+		4DAE5F8715F0DC5D005EFF4D /* SocketIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketIO.h; sourceTree = "<group>"; };
+		4DAE5F8915F0DC5D005EFF4D /* SocketIO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketIO.m; sourceTree = "<group>"; };
 		C9E391A015E2A1B00004693A /* SocketIOJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOJSONSerialization.h; sourceTree = SOURCE_ROOT; };
 		C9E391A115E2A1B00004693A /* SocketIOJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOJSONSerialization.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4ADCCB9A15790D760022990C /* Frameworks */ = {
+		4DAE5F7F15F0DC5D005EFF4D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A444FA31589E29500B44ABB /* Security.framework in Frameworks */,
-				4A444FA11589E28800B44ABB /* libicucore.dylib in Frameworks */,
-				4ADCCBEF15790FC70022990C /* CFNetwork.framework in Frameworks */,
-				4ADCCBA615790D760022990C /* CoreGraphics.framework in Frameworks */,
-				4ADCCBA415790D760022990C /* Foundation.framework in Frameworks */,
-				4ADCCBF115790FD30022990C /* MobileCoreServices.framework in Frameworks */,
-				4ADCCBF315790FDF0022990C /* SystemConfiguration.framework in Frameworks */,
-				4ADCCBA215790D760022990C /* UIKit.framework in Frameworks */,
+				4DAE5F8315F0DC5D005EFF4D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				4ADCCBA715790D760022990C /* SocketTesterARC */,
+				4DAE5F8415F0DC5D005EFF4D /* SocketIO */,
 				4ADCCBA015790D760022990C /* Frameworks */,
 				4ADCCB9E15790D760022990C /* Products */,
 			);
@@ -174,7 +175,7 @@
 		4ADCCB9E15790D760022990C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4ADCCB9D15790D760022990C /* SocketTesterARC.app */,
+				4DAE5F8215F0DC5D005EFF4D /* libSocketIO.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,6 +191,7 @@
 				4ADCCBA115790D760022990C /* UIKit.framework */,
 				4ADCCBA315790D760022990C /* Foundation.framework */,
 				4ADCCBA515790D760022990C /* CoreGraphics.framework */,
+				4DAE5F4315F0DBC9005EFF4D /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -224,25 +226,43 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4DAE5F8415F0DC5D005EFF4D /* SocketIO */ = {
+			isa = PBXGroup;
+			children = (
+				4DAE5F8715F0DC5D005EFF4D /* SocketIO.h */,
+				4DAE5F8915F0DC5D005EFF4D /* SocketIO.m */,
+				4DAE5F8515F0DC5D005EFF4D /* Supporting Files */,
+			);
+			path = SocketIO;
+			sourceTree = "<group>";
+		};
+		4DAE5F8515F0DC5D005EFF4D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DAE5F8615F0DC5D005EFF4D /* SocketIO-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4ADCCB9C15790D760022990C /* SocketTesterARC */ = {
+		4DAE5F8115F0DC5D005EFF4D /* SocketIO */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4ADCCBBB15790D760022990C /* Build configuration list for PBXNativeTarget "SocketTesterARC" */;
+			buildConfigurationList = 4DAE5F8B15F0DC5D005EFF4D /* Build configuration list for PBXNativeTarget "SocketIO" */;
 			buildPhases = (
-				4ADCCB9915790D760022990C /* Sources */,
-				4ADCCB9A15790D760022990C /* Frameworks */,
-				4ADCCB9B15790D760022990C /* Resources */,
+				4DAE5F7E15F0DC5D005EFF4D /* Sources */,
+				4DAE5F7F15F0DC5D005EFF4D /* Frameworks */,
+				4DAE5F8015F0DC5D005EFF4D /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SocketTesterARC;
-			productName = SocketTesterARC;
-			productReference = 4ADCCB9D15790D760022990C /* SocketTesterARC.app */;
-			productType = "com.apple.product-type.application";
+			name = SocketIO;
+			productName = SocketIO;
+			productReference = 4DAE5F8215F0DC5D005EFF4D /* libSocketIO.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -265,48 +285,34 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4ADCCB9C15790D760022990C /* SocketTesterARC */,
+				4DAE5F8115F0DC5D005EFF4D /* SocketIO */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		4ADCCB9B15790D760022990C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4ADCCBAC15790D760022990C /* InfoPlist.strings in Resources */,
-				4ADCCBB815790D760022990C /* ViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		4ADCCB9915790D760022990C /* Sources */ = {
+		4DAE5F7E15F0DC5D005EFF4D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ADCCD4D157915F00022990C /* SocketIO.m in Sources */,
-				4ADCCBAE15790D760022990C /* main.m in Sources */,
-				4ADCCBB215790D760022990C /* AppDelegate.m in Sources */,
-				4ADCCBB515790D760022990C /* ViewController.m in Sources */,
-				4A44536C1589EE5900B44ABB /* NSObject+SBJson.m in Sources */,
-				4A44536D1589EE5900B44ABB /* SBJsonParser.m in Sources */,
-				4A44536E1589EE5900B44ABB /* SBJsonStreamParser.m in Sources */,
-				4A44536F1589EE5900B44ABB /* SBJsonStreamParserAccumulator.m in Sources */,
-				4A4453701589EE5900B44ABB /* SBJsonStreamParserAdapter.m in Sources */,
-				4A4453711589EE5900B44ABB /* SBJsonStreamParserState.m in Sources */,
-				4A4453721589EE5900B44ABB /* SBJsonStreamWriter.m in Sources */,
-				4A4453731589EE5900B44ABB /* SBJsonStreamWriterAccumulator.m in Sources */,
-				4A4453741589EE5900B44ABB /* SBJsonStreamWriterState.m in Sources */,
-				4A4453751589EE5900B44ABB /* SBJsonTokeniser.m in Sources */,
-				4A4453761589EE5900B44ABB /* SBJsonUTF8Stream.m in Sources */,
-				4A4453771589EE5900B44ABB /* SBJsonWriter.m in Sources */,
-				4A4453811589EE9100B44ABB /* base64.c in Sources */,
-				4A4453821589EE9100B44ABB /* NSData+SRB64Additions.m in Sources */,
-				4A4453831589EE9100B44ABB /* SRWebSocket.m in Sources */,
-				C9E391A215E2A1B00004693A /* SocketIOJSONSerialization.m in Sources */,
+				4DAE5FA115F0DC79005EFF4D /* base64.c in Sources */,
+				4DAE5F8E15F0DC76005EFF4D /* NSData+SRB64Additions.m in Sources */,
+				4DAE5F8F15F0DC76005EFF4D /* SRWebSocket.m in Sources */,
+				4DAE5F9015F0DC76005EFF4D /* NSObject+SBJson.m in Sources */,
+				4DAE5F9115F0DC76005EFF4D /* SBJsonParser.m in Sources */,
+				4DAE5F9215F0DC76005EFF4D /* SBJsonStreamParser.m in Sources */,
+				4DAE5F9315F0DC76005EFF4D /* SBJsonStreamParserAccumulator.m in Sources */,
+				4DAE5F9415F0DC76005EFF4D /* SBJsonStreamParserAdapter.m in Sources */,
+				4DAE5F9515F0DC76005EFF4D /* SBJsonStreamParserState.m in Sources */,
+				4DAE5F9615F0DC76005EFF4D /* SBJsonStreamWriter.m in Sources */,
+				4DAE5F9715F0DC76005EFF4D /* SBJsonStreamWriterAccumulator.m in Sources */,
+				4DAE5F9815F0DC76005EFF4D /* SBJsonStreamWriterState.m in Sources */,
+				4DAE5F9915F0DC76005EFF4D /* SBJsonTokeniser.m in Sources */,
+				4DAE5F9A15F0DC76005EFF4D /* SBJsonUTF8Stream.m in Sources */,
+				4DAE5F9B15F0DC76005EFF4D /* SBJsonWriter.m in Sources */,
+				4DAE5F9D15F0DC76005EFF4D /* ViewController.m in Sources */,
+				4DAE5F9E15F0DC76005EFF4D /* SocketIO.m in Sources */,
+				4DAE5F9F15F0DC76005EFF4D /* SocketIOJSONSerialization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,35 +385,35 @@
 			};
 			name = Release;
 		};
-		4ADCCBBC15790D760022990C /* Debug */ = {
+		4DAE5F8C15F0DC5D005EFF4D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/SocketIO.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SocketTesterARC/SocketTesterARC-Prefix.pch";
-				INFOPLIST_FILE = "SocketTesterARC/SocketTesterARC-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SDKROOT)/usr/lib/system\"",
-				);
-				ONLY_ACTIVE_ARCH = YES;
+				GCC_PREFIX_HEADER = "SocketIO/SocketIO-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		4ADCCBBD15790D760022990C /* Release */ = {
+		4DAE5F8D15F0DC5D005EFF4D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/SocketIO.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SocketTesterARC/SocketTesterARC-Prefix.pch";
-				INFOPLIST_FILE = "SocketTesterARC/SocketTesterARC-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SDKROOT)/usr/lib/system\"",
-				);
-				ONLY_ACTIVE_ARCH = YES;
+				GCC_PREFIX_HEADER = "SocketIO/SocketIO-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -423,14 +429,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4ADCCBBB15790D760022990C /* Build configuration list for PBXNativeTarget "SocketTesterARC" */ = {
+		4DAE5F8B15F0DC5D005EFF4D /* Build configuration list for PBXNativeTarget "SocketIO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4ADCCBBC15790D760022990C /* Debug */,
-				4ADCCBBD15790D760022990C /* Release */,
+				4DAE5F8C15F0DC5D005EFF4D /* Debug */,
+				4DAE5F8D15F0DC5D005EFF4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
